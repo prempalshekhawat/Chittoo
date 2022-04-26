@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WinCertificateActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/questionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tell me about yourself?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/chittoo_blue"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/answerField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        android:hint="Write Your Answer Here"
+        android:theme="@style/TextInputLayoutStyle"
+        app:boxStrokeColor="@color/chittoo_blue"
+        android:layout_below="@+id/questionTV"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/answerInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:minHeight="200dp"
+            android:maxHeight="300dp"
+            android:gravity="start"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/answerTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answerField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/chittoo_blue" />
+
+    <Button
+        android:id="@+id/submitAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answerTimer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        android:text="submit" />
+
+
+</RelativeLayout>

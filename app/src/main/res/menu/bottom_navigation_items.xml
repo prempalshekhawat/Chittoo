@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/certificateFragment"
+        android:title="Certificate"
+        android:icon="@drawable/ic_baseline_certificate"
+        app:showAsAction="always"
+        app:cnb_backgroundColor="@color/chittoo_blue"
+        app:cnb_iconColor="@color/white"
+        >
+    </item>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_profile"
+        app:showAsAction="always"
+        app:cnb_backgroundColor="@color/chittoo_blue"
+        app:cnb_iconColor="@color/white"
+        >
+    </item>
+
+    <item
+        android:id="@+id/chatFragment"
+        android:title="Chat"
+        android:icon="@drawable/ic_baseline_insert_chat"
+        app:showAsAction="always"
+        app:cnb_backgroundColor="@color/chittoo_blue"
+        app:cnb_iconColor="@color/white"
+        >
+    </item>
+
+    <item
+        android:id="@+id/scoreFragment"
+        android:title="Score"
+        android:icon="@drawable/ic_baseline_score"
+        app:showAsAction="always"
+        app:cnb_backgroundColor="@color/chittoo_blue"
+        app:cnb_iconColor="@color/white"
+        >
+    </item>
+
+</menu>

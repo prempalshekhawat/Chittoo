@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignUpActivity"
+    android:background="@drawable/background_layer_dual_main"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signUpCardView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="25dp"
+        android:padding="20dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/cardMainRelativeLayoutSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/cardRelativeLayout001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/logoImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/chittoo_logo"
+                    app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"/>
+
+                <TextView
+                    android:id="@+id/headingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/logoImageView"
+                    android:text=" Sign Up"
+                    android:textColor="@color/chittoo_blue"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardRelativeLayout002"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardRelativeLayout001"
+                android:padding="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/signUpFirstNameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusBottomStart="15dp"
+                    app:boxCornerRadiusTopEnd="15dp"
+                    app:boxCornerRadiusTopStart="15dp"
+                    android:hint="First Name"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="@color/chittoo_blue"
+                    >
+
+                    <EditText
+                        android:id="@+id/signUpFirstNameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPersonName"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/signUpLastNameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/signUpFirstNameField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusBottomStart="15dp"
+                    app:boxCornerRadiusTopEnd="15dp"
+                    app:boxCornerRadiusTopStart="15dp"
+                    android:hint="Last Name"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="@color/chittoo_blue"
+                    >
+
+                    <EditText
+                        android:id="@+id/signUpLastNameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPersonName"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/signUpEmailField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusBottomStart="15dp"
+                    app:boxCornerRadiusTopEnd="15dp"
+                    app:boxCornerRadiusTopStart="15dp"
+                    android:hint="Email"
+                    android:layout_marginTop="10dp"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="@color/chittoo_blue"
+                    android:layout_below="@+id/signUpLastNameField"
+                    >
+
+                    <EditText
+                        android:id="@+id/signUpEmailInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textEmailAddress"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/loginPasswordField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/signUpEmailField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusBottomStart="15dp"
+                    app:boxCornerRadiusTopEnd="15dp"
+                    app:boxCornerRadiusTopStart="15dp"
+                    android:hint="Password"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="@color/chittoo_blue"
+                    app:passwordToggleEnabled="true"
+                    >
+
+                    <EditText
+                        android:id="@+id/signUpPasswordInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cardRelativeLayout004"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardRelativeLayout002"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/loginEnquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:text="Already Registered?" />
+
+                <TextView
+                    android:id="@+id/loginLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginEnquiry"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Login Here"
+                    android:textAlignment="center"
+                    android:textColor="@color/chittoo_blue"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="@color/chittoo_blue"
+                    android:text="Sign Up"
+                    android:background="@drawable/button_background"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

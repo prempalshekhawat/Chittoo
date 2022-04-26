@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:background="@drawable/background_layer_dual_main"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginCardView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="25dp"
+        android:padding="20dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/cardMainRelativeLayoutLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/cardRelativeLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/logoImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/chittoo_logo"
+                    app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+
+                <TextView
+                    android:id="@+id/headingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/logoImageView"
+                    android:text="Log In"
+                    android:textColor="@color/chittoo_blue"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardRelativeLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardRelativeLayout01"
+                android:padding="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/loginPhoneField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusBottomStart="15dp"
+                    app:boxCornerRadiusTopEnd="15dp"
+                    app:boxCornerRadiusTopStart="15dp"
+                    android:hint="Phone Number"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxStrokeColor="@color/chittoo_blue"
+                    >
+
+                    <EditText
+                        android:id="@+id/loginPhoneInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/loginPasswordField"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_below="@+id/loginPhoneField"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    app:boxCornerRadiusBottomEnd="15dp"-->
+<!--                    app:boxCornerRadiusBottomStart="15dp"-->
+<!--                    app:boxCornerRadiusTopEnd="15dp"-->
+<!--                    app:boxCornerRadiusTopStart="15dp"-->
+<!--                    android:hint="OTP"-->
+<!--                    android:theme="@style/TextInputLayoutStyle"-->
+<!--                    app:boxStrokeColor="@color/chittoo_blue"-->
+<!--                    app:passwordToggleEnabled="true"-->
+<!--                    >-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/loginPasswordInput"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:inputType="textPhonetic"-->
+<!--                        android:maxLength="6"-->
+<!--                        />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/cardRelativeLayout03"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/cardRelativeLayout02">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/forgotPasswordLink"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="25dp"-->
+<!--                    android:text="Forgot Password?" />-->
+
+<!--            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/cardRelativeLayout04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardRelativeLayout02"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/registrationEnquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:text="Didn't Registered Yet?" />
+
+                <TextView
+                    android:id="@+id/registerLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/registrationEnquiry"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Register Now"
+                    android:textAlignment="center"
+                    android:textColor="@color/chittoo_blue"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/getOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="@color/chittoo_blue"
+                    android:text="get otp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "154170121095",
+    "project_id": "chittoo-8f0c6",
+    "storage_bucket": "chittoo-8f0c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154170121095:android:c8f9a69d8f575ba6c11122",
+        "android_client_info": {
+          "package_name": "com.prempal.chittoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154170121095-e7uu3ugqna5293q3jnmualoo2i1ao45c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prempal.chittoo",
+            "certificate_hash": "05fc51a7458a390948497ed6eaae3c87a37931da"
+          }
+        },
+        {
+          "client_id": "154170121095-60vdoegko7a737oqr0n59u5ufp1s9p8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8kTTWLY3x9-Vy0OPsFfGcRYyP8UCjy98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154170121095-60vdoegko7a737oqr0n59u5ufp1s9p8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
