@@ -3,8 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.CertificateFragment"
     android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/white50per"
+        app:cardUseCompatPadding="false">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,14 +24,16 @@
         android:padding="10dp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="CERTIFICATE FRAGMENT"
             android:textColor="@color/chittoo_blue"
             android:layout_centerInParent="true"
             android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
+    </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
     </RelativeLayout>
 
 </FrameLayout>

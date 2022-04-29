@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="chittoo_blue">#FF336389</color>
+    <color name="diffused_pink">#FFD2A6B4</color>
+    <color name="white50per">#E6FFFFFF</color>
 </resources>

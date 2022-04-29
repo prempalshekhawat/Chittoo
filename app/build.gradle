@@ -49,4 +49,5 @@ dependencies {
 //firebase
     implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
     implementation 'androidx.browser:browser:1.4.0'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
 }

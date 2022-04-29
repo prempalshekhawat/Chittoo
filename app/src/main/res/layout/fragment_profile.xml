@@ -5,30 +5,56 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.ProfileFragment"
-    android:background="@color/white">
+    android:background="@color/white"
+    >
 
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:background="@color/chittoo_blue"
+    >
 
-    <Button
-        android:id="@+id/winCertificateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/bottomnavigation_background"
-        android:text="Win  Certificate" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/CustomCardViewStyle2"
+        app:cardBackgroundColor="@color/white50per"
+        app:cardUseCompatPadding="false">
 
-    <Button
-        android:id="@+id/signOutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/winCertificateButton"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/bottomnavigation_background"
-        android:text="log out"
-        android:layout_marginTop="75dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/winCertificateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/chittoo_blue"
+                android:textColor="@color/white"
+                android:text="Win  Certificate"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/signOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/winCertificateButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/chittoo_blue"
+                android:textColor="@color/white"
+                android:text="log out"
+                android:padding="5dp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
 </RelativeLayout>
 
