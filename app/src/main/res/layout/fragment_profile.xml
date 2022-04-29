@@ -20,6 +20,16 @@
         android:background="@drawable/bottomnavigation_background"
         android:text="Win  Certificate" />
 
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winCertificateButton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bottomnavigation_background"
+        android:text="log out"
+        android:layout_marginTop="75dp"/>
+
 </RelativeLayout>
 
 </FrameLayout>

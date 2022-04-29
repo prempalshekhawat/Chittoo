@@ -12,13 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chittoo">
         <activity
+            android:name=".Activities.LauncherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Activities.WinCertificateActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Activities.OtpVerificationActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Activities.SignUpActivity"
             android:exported="false"
@@ -27,11 +36,6 @@
             android:name=".Activities.LoginActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activities.MainActivity"

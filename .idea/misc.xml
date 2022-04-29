@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable-v24/button_background.xml" value="0.1275" />
         <entry key="app/src/main/res/drawable/background_layer_dual_main.xml" value="0.1275" />
         <entry key="app/src/main/res/drawable/bottomnavigation_background.xml" value="0.1275" />
+        <entry key="app/src/main/res/layout/activity_launcher.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_otp_verification.xml" value="0.19610507246376813" />
