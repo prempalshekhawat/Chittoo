@@ -118,7 +118,6 @@ public class OtpVerificationActivity extends AppCompatActivity {
 
             String code = phoneAuthCredential.getSmsCode();
             if (code != null || code.length() == 6) {
-//                    progressBar.setVisibility(View.VISIBLE);
                 verifyCode(code);
             }
         }

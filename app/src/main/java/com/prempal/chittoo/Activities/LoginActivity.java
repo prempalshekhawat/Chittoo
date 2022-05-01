@@ -30,7 +30,10 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         
         registerLink = findViewById(R.id.registerLink);
+
         getOTP = findViewById(R.id.getOTP);
+        getOTP.setEnabled(false);
+
         phoneNumber = findViewById(R.id.loginPhoneInput);
         
         registerLink.setOnClickListener(new View.OnClickListener() {

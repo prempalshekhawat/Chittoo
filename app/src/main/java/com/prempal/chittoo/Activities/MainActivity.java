@@ -32,6 +32,7 @@ public class MainActivity extends FragmentActivity {
     private static final int NUM_PAGES = 4;
     private MainViewPagerAdapter pagerAdapter;
     private String[] titles = new String[]{"Certificate", "Profile", "Chat", "Score"};
+    private int[] tabIcons = {R.drawable.ic_baseline_certificate, R.drawable.ic_baseline_profile, R.drawable.ic_baseline_chat_24, R.drawable.ic_baseline_score};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class MainActivity extends FragmentActivity {
         pagerAdapter = new MainViewPagerAdapter(getSupportFragmentManager(), getLifecycle());
         viewPager2.setAdapter(pagerAdapter);
         viewPager2.setPageTransformer(new ZoomOutPageTransformer());
-        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> tab.setText(titles[position])).attach();
+        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> tab.setText(titles[position]).setIcon(tabIcons[position])).attach();
     }
 
     public class ZoomOutPageTransformer implements ViewPager2.PageTransformer {
